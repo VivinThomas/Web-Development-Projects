@@ -1,15 +1,154 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
-    background: grey;
-    /* background: linear-gradient();  */
+    width: 100%;
+    /* background: linear-gradient(#68EACC, #497BE8); */
+    /* background: linear-gradient(to bottom, rgba(90, 80, 80, 0.5)40%, rgba(90, 80, 80, 0.5)40%), url(backgound.jpg); */
+    background: url(backgound.jpg);
     
+} 
+
+/* TASK PAGE*/
+.addtask:button {
+    color: red;
+    background: black;
 }
-.addtask:button{
-color: red;
-background: black;
+
+.Container {
+    /* position: relative; */
+    max-width: 700px;
+    padding: 25px;
+    /* max-height: 950px; */
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+    margin: 120px auto;
+    box-shadow: 1px 1px 15px black;
+}
+
+.addtask {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+}
+
+.addtask input[type=text] {
+    width: 70%;
+    color: rgb(63, 63, 63);
+    /* text color */
+    margin-left: 50px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(63, 63, 63);
+    font-size: xx-large;
+    padding: 10px;
+    outline: none;
+    /* outline will help to remove the highlited border when you cick the dialog box(text box) */
+}
+
+.addtask button {
+    margin: 0 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    /* coverts the whole string to uppercase */
+    outline: none;
+    cursor: pointer;
+    background: rgb(63, 63, 63);
+    opacity: 0.9;
+
+}
+.addtask button:hover{
+    opacity: 5;
+}
+
+.notcompleted,
+.completed {
+    margin: 15px 30px;
+    padding: 20px;
+    opacity: 0.7;
+}
+.completed:hover{
+    opacity: 1;
+}
+.notcompleted:hover{
+    opacity: 1;
+}
+
+
+h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(63, 63, 63);
+    margin-top: 30px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+ol li {
+    width: 100%;
+    padding: 18px;
+    background-color: #e96969bb;
+    font-size: 22px;
+    margin: 5px 0px;
+    counter-increment: my-counter;
+    opacity: 65%;
+}
+
+ol.completed li {
+    background-color: #58df8c;
+}
+
+ol li:before {
+    content: counter(my-counter);
+    background: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 40%;
+    display: inline-block;
+    line-height: 2rem;
+    /* This is used to adjust the height of the text written */
+    text-align: center;
+    color: white;
+    margin-right: 0.5rem;
+
+}
+
+li button {
+    float: right;
+    padding: 5px;
+    font-size: 30px;
+    line-height: 20px;
+    margin-right: 12px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+
+}
+
+ol li input[type=image] {
+    height: 40px;
+    width: 40px;
+    padding: 0px 0px;
+    float: right;
+    margin: 0 3px;
+    margin-top: -3px;
 }
