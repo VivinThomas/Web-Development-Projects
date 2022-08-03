@@ -1,0 +1,155 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%; 
+    background: url(backgound.jpg);
+    
+} 
+.container{
+    align-items: center;
+    text-align: center;
+    /* top: 0px;
+    left: 50%;
+    transform: translate(-25%,-90%) scale(0.8); */
+    
+   /* border: 2px solid red; */
+   margin: 45px auto;
+   background-color: rgba(48, 47, 47, 0.466) ;
+   height: 640px;
+   max-width: 500px;
+   padding: 0 30px 30px;
+   /* width: 100%; */
+   box-shadow: 1px 1px 15px rgb(160, 157, 151);
+   border-radius: 7px;
+   /* visibility: hidden; */
+}
+.form{
+    padding: 0 30px;
+    margin: 0 20px;
+    margin-top: -15px;
+    /* border: 2px solid red ; */
+}
+.form h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: wheat;
+    margin: 10px;
+   text-shadow: 1px 1px 15px rgb(160, 157, 151);
+
+}
+.form p{
+    color: white;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.popup input[type="name"]{
+    width: 155px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 10px 0px;
+    margin-right: 5px;
+    background: transparent;
+    border: 0.3px solid white;
+}
+.popup input[type="surname"]{
+    width: 155px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 10px 0px;
+    margin-left: 5px;
+    background: transparent;
+    border: 0.3px solid white;
+}
+.popup input[type="email"]{
+    width: 320px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 10px 10px;
+    background: transparent;
+    border: 0.3px solid white;
+}
+.popup input[type="password"]{
+    width: 320px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 10px 10px;
+    background: transparent;
+    border: 0.3px solid white;
+}
+
+#date{
+    margin: 10px 5px;
+    width: 90px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+#month{
+    margin: 10px 5px;
+    width: 90px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 13px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+#year{
+    margin: 10px 5px;
+    width: 90px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.gender{
+    margin: 11px auto;
+    padding-top: 7px;
+    width: 90px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+}
+.btn{
+    width: 160px;
+    height: 40px;
+    font-weight: 500;
+    font-size: large;
+    background-color: rgb(61, 94, 12);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 15px;
+   
+}
+.btn:hover{
+    background: rgb(3, 85, 3);
+    color: white;
+    opacity: 0.8;
+}
+.footer p{
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.footer p a{
+    font-size: small;
+    text-decoration: none;
+    color: rgb(80, 80, 187);
+}
