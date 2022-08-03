@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List | Online Task Manager</title>
+    <title>To Do List | Online Task Manager</title>
+    <link rel="stylesheet" href="styleToDo.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="Container">
         <div class="addtask">
@@ -16,15 +17,22 @@
         </div>
         <ol class="notcompleted">
             <h3>Not Completed</h3>
-            <li>Task
-                <button><i class="fa fa-check"></i></button>
+            <li> Task
                 <button><i class="fa fa-trash"></i></button>
+                <button><i class="fa fa-check"></i></button>
+                <!-- <input type="image" value="Check" class="fa fa-check" src="check_icon.png"> -->
             </li>
         </ol>
         <ol class="completed">
             <h3>Completed</h3>
+            <li> Task
+                <button><i class="fa fa-trash"></i></button>
+            </li>
         </ol>
     </div>
+    <!-- The JavaScript Begins From Here -->
+
+   
 </body>
 
 </html>
