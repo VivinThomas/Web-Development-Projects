@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(backgound.jpg);
+    opacity:calc(0.9)
+}
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px grey;
+}
+#Analog {
+    position: relative;
+    background: url(clock_face.png) no-repeat;
+    height: 300px;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 5%;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px rgba(192, 192, 192, 0.671);
+    
+}
+
+#hours,
+#minute,
+#second {
+    position: absolute;
+    border-radius: 2px;
+    transform-origin: bottom;
+    /* adding transform origin bottom will make the hands of the clock to rotate froms its bottom (from where it is connected to the center of the clock dial)*/
+/* withouth adding transform origin the hands will rotate from THEIR center (by default) rather then the center for the clock dial */
+}
+
+#hours {
+    height: 61px;
+    width: 8px;
+    top: 29%;
+    right: 49.1%;
+    background: black;
+    visibility: visible;
+    opacity: 0.8;
+}
+
+#minute {
+    height: 99px;
+    width: 6px;
+    top: 17%;
+    right: 49.4%;
+    background: black;
+    visibility: visible;
+    opacity: 0.8;
+}
+
+#second {
+    height: 114px;
+    width: 5px;
+    top: 12.4%;
+    right: 49.5%;
+    background:linear-gradient(to bottom, red ,black);
+    visibility: visible;
+    opacity: 0.8;
+}
+.Digital{
+border: 0.1px solid white;
+border-radius: 5px;
+width: 360px;
+padding: 4px;
+margin:100px auto;
+text-align: center;
+box-shadow: 1px 1px 10px white;
+background: linear-gradient(65deg,rgb(252, 154, 154), rgb(253, 122, 122), rgb(253, 101, 101),rgb(253, 18, 57),red, rgb(189, 1, 1),black, black);
+animation: VivinClock 1.5s linear infinite;
+}
+#Time{
+    color: black;
+    font-size: 40px;
+    margin: 4px;
+    background-color: white;
+    word-spacing: 10px;
+    box-shadow: 1px 1px 10px white;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* discovered something new webkit text fill color */
+   }
+   @keyframes VivinClock {
+    100%{
+        filter:hue-rotate(360deg);
+    }
+   }
+   #Time:hover{
+    color: white;
+    background: none;
+    word-spacing: 10px;
+    box-shadow: none;
+    
+   }
